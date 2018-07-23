@@ -28,6 +28,7 @@
           String 클래스는 다른 객체를 참조하더라도 같은 문자열이면 true를 리턴하는 Override된 equals()를 가지기 때문이다. String 클래스의 hashCode()도 마찬가지라 같은 해시값을 갖는다.
           우리는 사용자 정의 클래스의 경우에도 같은 값을 가진 두 개의 객체를 equals()로 비교하면 String 클래스처럼 true를 리턴값으로 가지고 싶다. 따라서 equals()를 사용자 정의 클래스에서 Override한다.
           그런데 hashCode()의 리턴값이 다르게 나온다. equals()로 비교했을 때 리턴값이 true가 나오면 hashCode도 같아야한다. 즉, equals()로 비교했을 때 true가 나온 객체들의 hashCode가 동일해지도록 재정의 한다.
+          두 메소드를 재정의 해야지 컬랙션 프레임워크의 set인터페이스를 구현한 hashSet클래스가 중복된 객체를 저장 안할 수 있다.
         </p>
       </div>
     </div>
